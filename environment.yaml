@@ -1,0 +1,7 @@
+# conda env create --force -f enviroment.yaml
+# pip-compile
+# pip install
+name: myllama
+dependencies:
+  - python<3.12
+  - pip-tools
