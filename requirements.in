@@ -1,4 +1,7 @@
+click
 langchain
 sentence_transformers
 faiss-cpu
 ctransformers
+pypdf
+pdfminer.six

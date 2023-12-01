@@ -16,10 +16,18 @@ attrs==23.1.0
     # via aiohttp
 certifi==2023.11.17
     # via requests
+cffi==1.16.0
+    # via cryptography
 charset-normalizer==3.3.2
-    # via requests
+    # via
+    #   pdfminer-six
+    #   requests
 click==8.1.7
-    # via nltk
+    # via
+    #   -r requirements.in
+    #   nltk
+cryptography==41.0.7
+    # via pdfminer-six
 ctransformers==0.2.27
     # via -r requirements.in
 dataclasses-json==0.6.3
@@ -99,10 +107,14 @@ packaging==23.2
     #   huggingface-hub
     #   marshmallow
     #   transformers
+pdfminer-six==20221105
+    # via -r requirements.in
 pillow==10.1.0
     # via torchvision
 py-cpuinfo==9.0.0
     # via ctransformers
+pycparser==2.21
+    # via cffi
 pydantic==2.5.2
     # via
     #   langchain
@@ -110,6 +122,8 @@ pydantic==2.5.2
     #   langsmith
 pydantic-core==2.14.5
     # via pydantic
+pypdf==3.17.1
+    # via -r requirements.in
 pyyaml==6.0.1
     # via
     #   huggingface-hub
